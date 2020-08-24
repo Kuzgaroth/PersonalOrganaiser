@@ -1,0 +1,49 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Note_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <EditText
+        android:layout_width="300.0dp"
+        android:layout_height="45dp"
+        android:id="@+id/note_header_creation"
+        android:inputType="none|text"
+        android:layout_centerHorizontal="true"
+        android:hint="Введите заголовок"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="5dp"
+        android:maxLength="100"
+        />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_name_invalid"
+        android:id="@+id/note_description_creation"
+        android:hint="Введите текст"
+        android:layout_centerHorizontal="true"
+        android:cursorVisible="true"
+        android:typeface="sans"
+        android:selectAllOnFocus="false"
+        android:maxLines="10"
+        android:minLines="1"/>
+    <TextView
+        android:text="Имя не может быть пустым"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "@color/Deadline_color"
+        android:textSize = "15dp"
+        android:layout_below="@id/note_header_creation"
+        android:id="@+id/note_name_invalid"
+        android:layout_alignLeft="@id/note_header_creation" 
+        android:visibility="invisible"
+        />
+</RelativeLayout>

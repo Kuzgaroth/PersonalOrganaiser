@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <EditText
+        android:text="name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/event_item_name"
+        android:maxLines="3"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="30px"
+        android:inputType="text"
+        android:layout_marginHorizontal="30dp" 
+        />
+    <TextView
+        android:text="@string/invalid_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "@color/Deadline_color"
+        android:textSize = "15dp"
+        android:layout_below="@id/event_item_name"
+        android:id="@+id/event_edit_name_invalid"
+        android:layout_alignLeft="@id/event_item_name"
+        android:visibility="invisible"
+        />
+    <EditText
+        android:text="description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_edit_name_invalid"
+        android:id="@+id/event_item_description"
+        android:inputType="textMultiLine|none"
+        android:layout_marginHorizontal="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_item_description"
+        android:id="@+id/event_start_page"
+        android:hint="@string/start_event_hint"
+        android:textSize="18dp"
+        android:layout_marginLeft="15dp" 
+        android:layout_marginTop="5dp"/>
+<TextView
+        android:text="Incorrect time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "@color/Deadline_color"
+        android:textSize = "15dp"
+        android:layout_below="@id/event_start_page"
+        android:id="@+id/event_start_invalid_page"
+        android:layout_alignLeft="@id/event_start_page" 
+        android:visibility="invisible"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_start_invalid_page"
+        android:id="@+id/event_end_page"
+        android:hint="@string/end_event_hint"
+        android:textSize="18dp"
+        android:layout_marginLeft="15dp" 
+        android:layout_marginTop="5dp"/>
+<TextView
+        android:text="Incorrect Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "@color/Deadline_color"
+        android:textSize = "15dp"
+        android:layout_below="@id/event_end_page"
+        android:id="@+id/event_end_invalid_page"
+        android:layout_alignLeft="@id/event_end_page" 
+        android:visibility="invisible"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "20dp"
+        android:text="status"
+        android:layout_below="@id/event_end_invalid_page"
+        android:id="@+id/status"
+        android:layout_alignLeft="@id/event_start_invalid_page"
+        />
+    <TextView
+        android:text="creation_date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status"
+        android:id="@+id/event_item_creation_date"
+        android:layout_marginHorizontal="20px"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

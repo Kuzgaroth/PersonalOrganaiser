@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">FinallyApp</string>
+    <string name="title_note">Заметки</string>
+    <string name="title_todo">Задачи</string>
+    <string name="title_event">События</string>
+  <string name="title_summary">Сводка</string>
+  <string name="single_note">Заметка</string>
+  <string name="single_todo">Задача</string>
+  <string name="single_event">Событие</string>
+  <string name="new_event">Новое событие</string>
+  <string name="new_note">Новая заметка</string>
+  <string name="new_todo">Новая задача</string>
+  <string name="invalid_name">Имя не может быть пустым</string>
+  <string name="invalid_time">Некорректное время</string>
+  <string name="positive_button">Ок</string>
+  <string name="negative_button">Отмена</string>
+  <string name="delete_confirm">Вы точно хотите удалить элемент?</string>
+  <string name="note_summary">Последняя заметка:</string>
+  <string name="todo_summary">Горящее задание:</string>
+  <string name="event_summary">Ближаёшее событие:</string>
+  <string name="settings_title">Настройки</string>
+  <string name="summary_settings">Экран сводки</string>
+  <string name="notification_settings">Уведомления</string>
+  <string name="datetime_settings">Дата и время</string>
+  <string name="datetime_format">Формат отображения даты</string>
+  <string name="summary_explanation">Выбор метода отображения элементов на экране сводки</string>
+  <string name="zero_notes">Cписок заметок пуст</string>
+  <string name="zero_todos">Нет активных задач</string>
+  <string name="zero_events">Нет запланированных событий</string>
+  <string name="status_active">Статус: Активна</string>
+  <string name="status_done">Статус: Сделана</string>
+  <string name="status_missed">Статус: Пропущена</string>
+  <string name="status_started">Статус: Началось</string>
+  <string name="status_ended">Статус: Закончилось</string>
+  <string name="status_waiting">Статус: В ожидании</string>
+  <string name="start_event_hint">Введите дату начала события</string>
+  <string name="end_event_hint">Введите дату конца события</string>
+<string-array name="note_prompt">
+  <item>Последняя созданная заметка</item>
+  <item>Самая большая заметка</item>
+</string-array>
+<string-array name="todo_prompt">
+  <item>Горящая задача</item>
+  <item>Самая большая задача</item>
+  <item>Последняя созданная задача</item>
+</string-array>
+<string-array name="event_prompt">
+  <item>Ближайшее событие</item>
+  <item>Самое большое событие</item>
+  <item>Последнее созданное событие</item> 
+</string-array>
+<string-array name="datetime_prompt">
+  <item>dd Month yyyy г. hh:mm</item>
+  <item>dd.MM.yyyy hh:mm</item>
+</string-array>
+</resources>

@@ -1,0 +1,66 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Todo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/todo_creation_name"
+        android:inputType="text"
+        android:hint="Введите название"
+        android:singleLine="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        />
+    <TextView
+        android:text="Имя не может быть пустым"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "@color/Deadline_color"
+        android:textSize = "15dp"
+        android:layout_below="@id/todo_creation_name"
+        android:id="@+id/todo_name_invalid"
+        android:layout_alignLeft="@id/todo_creation_name" 
+        android:visibility="invisible"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todo_name_invalid"
+        android:id="@+id/todo_creation_text"
+        android:inputType="none|textMultiLine"
+        android:hint="Введите описание задачи"
+        android:layout_marginRight = "5dp"
+        android:layout_alignLeft = "@id/todo_creation_name"
+        android:maxLines="5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todo_creation_text"
+        android:id="@+id/todo_deadline"
+        android:hint="Введите дедлайн"
+        android:textSize="18dp"
+        android:layout_marginLeft="15dp" 
+        android:layout_marginTop="5dp"/>
+<TextView
+        android:text="Некорректное время"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "@color/Deadline_color"
+        android:textSize = "15dp"
+        android:layout_below="@id/todo_deadline"
+        android:id="@+id/todo_time_invalid"
+        android:layout_alignLeft="@id/todo_deadline" 
+        android:visibility="invisible"
+        />
+</RelativeLayout>

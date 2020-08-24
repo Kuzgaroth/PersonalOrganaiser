@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#1B3147</color>
+    <color name="colorAccent">#3498db</color>
+    <color name="NoteMainColor">#DAA520</color>
+    <color name="EventMainColor">#8B0000</color>
+    <color name="TodoMainColor">#9ACD32</color>
+    <color name="NoteCard_color">#ffc7a8</color>
+    <color name="TodoCard_color">#98FB98</color>
+    <color name="EventCard_color">#FA8072</color>
+    <color name="Deadline_color">#ffff0000</color>
+    <color name="SummaryColor">#4682B4</color>
+    <color name="SettingsColor">#2F4F4F</color>
+    <color name="LoadingScreenColor">#FFFFFF</color>
+  <color name="StartedEventColor">#ffff00</color>
+</resources>

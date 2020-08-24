@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <EditText
+        android:text="name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25dp"
+        android:minHeight="25dp"
+        android:id="@+id/note_item_name"
+        android:maxLines="3"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:layout_marginHorizontal="30dp" 
+        />
+     <TextView
+        android:text="@string/invalid_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor = "@color/Deadline_color"
+        android:textSize = "15dp"
+        android:layout_below="@id/note_item_name"
+        android:id="@+id/note_edit_name_invalid"
+        android:layout_alignLeft="@id/note_item_name" 
+        android:visibility="invisible"
+        />
+    <EditText
+        android:text="description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_edit_name_invalid"
+        android:id="@+id/note_item_description"
+        android:inputType="textMultiLine|none"
+        android:layout_marginHorizontal="10dp" />
+    <TextView
+        android:text="creation_date"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note_item_description"
+        android:id="@+id/note_item_creation_date"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="10dp" 
+          />
+
+</RelativeLayout>

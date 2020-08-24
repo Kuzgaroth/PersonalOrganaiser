@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+       android:id="@+id/menu_create"
+       android:icon="@drawable/baseline_add_24"
+       app:showAsAction="ifRoom"
+       android:title="Создать" 
+       android:orderInCategory="1"/>
+  <item
+       android:id="@+id/settings"
+       android:icon="@drawable/settings_icon_24"
+       app:showAsAction="ifRoom"
+       android:title="Настройки"
+       android:orderInCategory="2"/>
+  <item
+       android:id="@+id/sort_type"
+       android:icon="@drawable/sort_type_icon"
+       app:showAsAction="ifRoom"
+       android:title="Сортировка"
+       android:orderInCategory="3">
+    <menu>
+      <group android:checkableBehavior="single">
+        <item android:id="@+id/old_to_new"
+            android:title="Сначала старые" />
+      <item android:id="@+id/AtoZ"
+            android:title="А до Я" />
+      <item android:id="@+id/ZtoA"
+            android:title="Я до А" />
+      <item android:id="@+id/new_to_old"
+            android:title="Сначала новые" />
+      </group>
+    </menu>
+  </item>
+  <item
+       android:id="@+id/menu_edit"
+       android:icon="@drawable/baseline_create_24"
+       app:showAsAction="ifRoom"
+       android:title="Редактировать" 
+       android:orderInCategory="4"/>
+  <item
+       android:id="@+id/menu_delete"
+       app:showAsAction="ifRoom"
+       android:icon="@drawable/baseline_delete_sweep_24"
+       android:title="Удалить" 
+       android:orderInCategory="5"/>
+  <item 
+       android:id="@+id/menu_save"
+       app:showAsAction="ifRoom"
+       android:icon="@drawable/baseline_check_24"
+       android:title="Сохранить"
+       android:orderInCategory="6"/>
+  <item 
+      android:id="@+id/menu_cancel"
+      app:showAsAction="ifRoom"
+       android:icon="@drawable/baseline_cancel_24"
+      android:title="Отмена"
+      android:orderInCategory="7"/>
+</menu>

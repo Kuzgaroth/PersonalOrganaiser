@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+      android:id="@+id/navigation_summary"
+      android:icon="@drawable/summary_icon_24"
+      android:title="@string/title_summary"
+        
+        />
+    <item
+        android:id="@+id/navigation_note"
+        android:icon="@drawable/note_icon_24"
+        android:title="@string/title_note" 
+        
+        />
+    <item
+        android:id="@+id/navigation_todo"
+        android:icon="@drawable/todo_icon_24"
+        android:title="@string/title_todo" 
+        />
+
+    <item
+        android:id="@+id/navigation_event"
+        android:icon="@drawable/event_icon_24"
+        android:title="@string/title_event" 
+        />
+
+</menu>
